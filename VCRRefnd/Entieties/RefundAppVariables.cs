@@ -9,7 +9,7 @@ namespace VCRrefunds
 	public class RefundAppVariables 
 	{
 
-		protected string _GroupName;
+        protected string _GroupName;
 		protected string _QueueName;
 		protected string _UserPassword;
 		protected string _UserID;
