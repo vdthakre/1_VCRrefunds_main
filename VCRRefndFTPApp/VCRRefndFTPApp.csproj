@@ -148,6 +148,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="RefundPrivatekey.ppk" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
