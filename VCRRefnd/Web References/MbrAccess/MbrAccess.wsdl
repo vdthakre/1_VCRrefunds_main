@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.alaskaair.com/image/webservices/mbraccess/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.alaskaair.com/image/webservices/mbraccess/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.alaskaair.com/image/webservices/mbraccess/">
+      <s:element name="Version">
+        <s:complexType />
+      </s:element>
+      <s:element name="VersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CollectRedepositFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:CollectRedepositFee_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CollectRedepositFee_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertificateNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardHolder" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardExpirationDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChargeAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApprovalCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SabreAAACity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SabreAgentSign" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CollectRedepositFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CollectRedepositFeeResult" type="tns:CollectRedepositFee_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CollectRedepositFee_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebServiceResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnrollMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:EnrollMember_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EnrollMember_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prefix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleInitial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Suffix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Organization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateOrProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneExtension" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessOrHomeAddressIndicator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateOfBirth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailFormatPreference" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EStatementsRequested" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnrollMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnrollMemberResult" type="tns:EnrollMember_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EnrollMember_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="MemberNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCertificateMiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetCertificateMiles_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCertificateMiles_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Certificates" type="tns:CertificateCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CertificateCollection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfCertificate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCertificate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Certificate" nillable="true" type="tns:Certificate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Certificate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CertificateNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketIssueDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IssuedOnMemberNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesRedeemed" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCertificateMilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCertificateMilesResult" type="tns:GetCertificateMiles_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCertificateMiles_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="Certificates" type="tns:CertificateCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMemberProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetMemberProfile_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetMemberProfile_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="MemberNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IncludeTierStatus" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMemberProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMemberProfileResult" type="tns:GetMemberProfile_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetMemberProfile_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="Member" type="tns:MemberProfile" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MemberProfile">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MemberNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prefix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleInitial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Suffix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateOfBirth" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesAvailable" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailFormatPreference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailFutileIndicator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastAwardDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastAwardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastAwardMileageLevel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TierLevel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SeatPreference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RowPreference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CabinPreference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SidePreference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FareRestrictionPreference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneExtension" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CanRedeemMiles" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsAlaskaVisaHolder" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsBoardroomMember" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsMemberUpdateable" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsProfileUpdateable" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFraud" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsEZBizAccount" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCharityMileAccount" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="SynchronizationStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WebProfileGUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WebProfileUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAddress" type="tns:Address" />
+          <s:element minOccurs="0" maxOccurs="1" name="MailingAddress" type="tns:Address" />
+          <s:element minOccurs="0" maxOccurs="1" name="FlightActivities" type="tns:FlightActivityCollection" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCards" type="tns:CreditCardCollection" />
+          <s:element minOccurs="0" maxOccurs="1" name="TierStatus" type="tns:TierStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Address">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Organization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateOrProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FlightActivityCollection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfFlightActivity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFlightActivity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FlightActivity" nillable="true" type="tns:FlightActivity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FlightActivity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionCodeDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActualMiles" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BonusMiles" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FlightNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassOfService" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Origin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Destination" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CreditCardCollection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfCreditCard" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCreditCard">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CreditCard" nillable="true" type="tns:CreditCard" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CreditCard">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CCNumber_AS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CCType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NameOnAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpireMonth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpireYear" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsPrimary" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsUpdated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDAttribute" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TierStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TierLevel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesAwardedAS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesAwardedASPartner" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegmentsFlownASPartner" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesASRequiredForMVP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesASRequiredForGold" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesASPartnerRequiredForMVP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesASPartnerRequiredForGold" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegmentsASPartnerRequiredForMVP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SegmentsASPartnerRequiredForGold" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MillionMilesAwarded" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMilesRequiredForProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetMilesRequiredForProduct_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetMilesRequiredForProduct_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMilesRequiredForProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMilesRequiredForProductResult" type="tns:GetMilesRequiredForProduct_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetMilesRequiredForProduct_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="1" maxOccurs="1" name="MilesRequired" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTierStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetTierStatus_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetTierStatus_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="MemberNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTierStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTierStatusResult" type="tns:GetTierStatus_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetTierStatus_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="TierStatus" type="tns:TierStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RedeemAward">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:RedeemAward_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RedeemAward_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="MemberNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Passengers" type="tns:PassengerCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PassengerCollection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfPassenger" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPassenger">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Passenger" nillable="true" type="tns:Passenger" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Passenger">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RedeemAwardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RedeemAwardResult" type="tns:RedeemAward_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RedeemAward_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="Certificates" type="tns:CertificateCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RedepositMiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:RedepositMiles_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RedepositMiles_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Certificates" type="tns:CertificateCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RedepositMilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RedepositMilesResult" type="tns:RedepositMiles_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RedepositMiles_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SearchForMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:SearchForMember_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SearchForMember_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateOfBirth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneExtension" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SearchForMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchForMemberResult" type="tns:SearchForMember_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SearchForMember_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="SearchResults" type="tns:SearchForMemberResultCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SearchForMemberResultCollection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfSearchForMemberResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSearchForMemberResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SearchForMemberResult" nillable="true" type="tns:SearchForMemberResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SearchForMemberResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MemberNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateOfBirth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HomePhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessPhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HomePostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessPostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateOfEnrollment" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFraudulent" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CanRedeemMiles" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MailSeed" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:UpdateCertificate_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateCertificate_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Certificates" type="tns:CertificateCollection" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCertificateResult" type="tns:UpdateCertificate_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateCertificate_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateMemberProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:UpdateMemberProfile_Request" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateMemberProfile_Request">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:UserInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Member" type="tns:MemberProfile" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateMemberProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateMemberProfileResult" type="tns:UpdateMemberProfile_Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UpdateMemberProfile_Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="tns:WebServiceResult" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VersionSoapIn">
+    <wsdl:part name="parameters" element="tns:Version" />
+  </wsdl:message>
+  <wsdl:message name="VersionSoapOut">
+    <wsdl:part name="parameters" element="tns:VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CollectRedepositFeeSoapIn">
+    <wsdl:part name="parameters" element="tns:CollectRedepositFee" />
+  </wsdl:message>
+  <wsdl:message name="CollectRedepositFeeSoapOut">
+    <wsdl:part name="parameters" element="tns:CollectRedepositFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnrollMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:EnrollMember" />
+  </wsdl:message>
+  <wsdl:message name="EnrollMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:EnrollMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCertificateMilesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCertificateMiles" />
+  </wsdl:message>
+  <wsdl:message name="GetCertificateMilesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCertificateMilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMemberProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMemberProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMilesRequiredForProductSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMilesRequiredForProduct" />
+  </wsdl:message>
+  <wsdl:message name="GetMilesRequiredForProductSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMilesRequiredForProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTierStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTierStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetTierStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTierStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="RedeemAwardSoapIn">
+    <wsdl:part name="parameters" element="tns:RedeemAward" />
+  </wsdl:message>
+  <wsdl:message name="RedeemAwardSoapOut">
+    <wsdl:part name="parameters" element="tns:RedeemAwardResponse" />
+  </wsdl:message>
+  <wsdl:message name="RedepositMilesSoapIn">
+    <wsdl:part name="parameters" element="tns:RedepositMiles" />
+  </wsdl:message>
+  <wsdl:message name="RedepositMilesSoapOut">
+    <wsdl:part name="parameters" element="tns:RedepositMilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchForMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchForMember" />
+  </wsdl:message>
+  <wsdl:message name="SearchForMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchForMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCertificate" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMemberProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateMemberProfile" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMemberProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateMemberProfileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MbrAccessSoap">
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionSoapIn" />
+      <wsdl:output message="tns:VersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CollectRedepositFee">
+      <wsdl:input message="tns:CollectRedepositFeeSoapIn" />
+      <wsdl:output message="tns:CollectRedepositFeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnrollMember">
+      <wsdl:input message="tns:EnrollMemberSoapIn" />
+      <wsdl:output message="tns:EnrollMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateMiles">
+      <wsdl:input message="tns:GetCertificateMilesSoapIn" />
+      <wsdl:output message="tns:GetCertificateMilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberProfile">
+      <wsdl:input message="tns:GetMemberProfileSoapIn" />
+      <wsdl:output message="tns:GetMemberProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMilesRequiredForProduct">
+      <wsdl:input message="tns:GetMilesRequiredForProductSoapIn" />
+      <wsdl:output message="tns:GetMilesRequiredForProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTierStatus">
+      <wsdl:input message="tns:GetTierStatusSoapIn" />
+      <wsdl:output message="tns:GetTierStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RedeemAward">
+      <wsdl:input message="tns:RedeemAwardSoapIn" />
+      <wsdl:output message="tns:RedeemAwardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RedepositMiles">
+      <wsdl:input message="tns:RedepositMilesSoapIn" />
+      <wsdl:output message="tns:RedepositMilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchForMember">
+      <wsdl:input message="tns:SearchForMemberSoapIn" />
+      <wsdl:output message="tns:SearchForMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificate">
+      <wsdl:input message="tns:UpdateCertificateSoapIn" />
+      <wsdl:output message="tns:UpdateCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberProfile">
+      <wsdl:input message="tns:UpdateMemberProfileSoapIn" />
+      <wsdl:output message="tns:UpdateMemberProfileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MbrAccessSoap" type="tns:MbrAccessSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Version">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/Version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CollectRedepositFee">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/CollectRedepositFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnrollMember">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/EnrollMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateMiles">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetCertificateMiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberProfile">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetMemberProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMilesRequiredForProduct">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetMilesRequiredForProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTierStatus">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetTierStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedeemAward">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/RedeemAward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedepositMiles">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/RedepositMiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchForMember">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/SearchForMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificate">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/UpdateCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberProfile">
+      <soap:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/UpdateMemberProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MbrAccessSoap12" type="tns:MbrAccessSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Version">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/Version" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CollectRedepositFee">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/CollectRedepositFee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnrollMember">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/EnrollMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertificateMiles">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetCertificateMiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberProfile">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetMemberProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMilesRequiredForProduct">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetMilesRequiredForProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTierStatus">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/GetTierStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedeemAward">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/RedeemAward" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedepositMiles">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/RedepositMiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchForMember">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/SearchForMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCertificate">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/UpdateCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberProfile">
+      <soap12:operation soapAction="http://www.alaskaair.com/image/webservices/mbraccess/UpdateMemberProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MbrAccess">
+    <wsdl:port name="MbrAccessSoap" binding="tns:MbrAccessSoap">
+      <soap:address location="http://image.test.webservice.alaskaair.com/MbrAccess/MbrAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MbrAccessSoap12" binding="tns:MbrAccessSoap12">
+      <soap12:address location="http://image.test.webservice.alaskaair.com/MbrAccess/MbrAccess.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

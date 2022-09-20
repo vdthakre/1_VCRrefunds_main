@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://image.test.webservice.alaskaair.com/MbrAccessSolar/MbrAccess.asmx?wsdl" docRef="http://image.test.webservice.alaskaair.com/MbrAccessSolar/MbrAccess.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://image.test.webservice.alaskaair.com/MbrAccessSolar/MbrAccess.asmx" xmlns:q1="http://www.alaskaair.com/image/webservices/mbraccess/" binding="q1:MbrAccessSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://image.test.webservice.alaskaair.com/MbrAccessSolar/MbrAccess.asmx" xmlns:q2="http://www.alaskaair.com/image/webservices/mbraccess/" binding="q2:MbrAccessSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

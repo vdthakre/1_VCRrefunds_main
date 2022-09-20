@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32" name="ASThreadeeInterface.X" version="1.0.0.0" />
+    <file name="ASThreadeeInterface.dll">
+        <typelib tlbid="{DF18B541-92F1-11D4-8EB4-00104B6D5767}" version="1.0" helpdir="" />
+        <comClass clsid="{DF18B54E-92F1-11D4-8EB4-00104B6D5767}" threadingModel="Both" progid="ASThreadeeInterface.ASThreadee.1" />
+    </file>
+    <comInterfaceExternalProxyStub name="IASThreadee" iid="{DF18B54D-92F1-11D4-8EB4-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{DF18B541-92F1-11D4-8EB4-00104B6D5767}" />
+</assembly>

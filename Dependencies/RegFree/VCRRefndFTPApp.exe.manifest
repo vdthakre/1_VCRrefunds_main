@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32" name="VCRRefndFTPApp" version="1.0.0.0" />
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="ASHosts.X" version="1.0.0.0" />
+        </dependentAssembly>
+    </dependency>
+    <!-- If you have another manifest for another .dll then you would have an additional <dependency> node like the above node-->
+</assembly>

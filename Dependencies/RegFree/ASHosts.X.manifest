@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32" name="ASHosts.X" version="1.0.0.0" />
+    <file name="ASHosts.dll">
+        <typelib tlbid="{00000000-0001-1111-1111-111111111111}" version="1.6" helpdir="" />
+        <comClass clsid="{00000000-0002-1111-1111-111111111111}" threadingModel="Both" progid="ASHosts.ASHostSession.1" />
+        <comClass clsid="{53CE2A3A-2DFD-11D5-8F31-00104B6D5767}" threadingModel="Apartment" progid="ASHosts.ASHostStatus.1" />
+        <comClass clsid="{998628EA-5A9A-11D5-A720-00B0D07E90CF}" threadingModel="Both" progid="ASHosts.ASHostDevices.1" />
+    </file>
+    <comInterfaceExternalProxyStub name="_HostSessionInternalEvents" iid="{7B71FEA0-3F41-11D5-8F4D-00104B6D5767}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="_IASHostDevicesEvents" iid="{9E4400F5-B746-4100-8B40-7A61DB47E525}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASHostSession" iid="{00000000-0003-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="_IASHostSessionInternal" iid="{031F4020-2EC4-11D5-8F32-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASHostStatus" iid="{AFC21759-AED1-11D4-8B47-00C04F53554D}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IHostDeviceInfo" iid="{998628E3-5A9A-11D5-A720-00B0D07E90CF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IHostDeviceInfos" iid="{998628E5-5A9A-11D5-A720-00B0D07E90CF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASHostDevices" iid="{998628E9-5A9A-11D5-A720-00B0D07E90CF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0001-1111-1111-111111111111}" />
+</assembly>

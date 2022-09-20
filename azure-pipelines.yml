@@ -1,0 +1,91 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+trigger:
+- main
+
+pool:
+  name: OnPremAgents
+  demands:
+  - msbuild
+  - visualstudio
+  - Cmd
+
+variables:
+  solution: '**/*.sln'
+  BuildPlatform: 'Any CPU'
+  BuildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 4.4.1'
+  inputs:
+    versionSpec: 4.4.1
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: '$(Parameters.solution)'
+
+- task: VSBuild@1
+  displayName: 'Build solution **\*.sln'
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:outdir="bin\$(BuildConfiguration)" /p:PipelineDependsOnBuild=false'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+    clean: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Build Files'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**\bin\$(BuildConfiguration)\**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Build Artifact'
+  inputs:
+    ArtifactName: VCRRefunds
+
+- script: |
+   "$(Build.SourcesDirectory)\Msi\BuildMSI.cmd"
+   
+  displayName: 'Command Line Script'
+  enabled: false
+
+- task: petergroenewegen.PeterGroenewegen-Xpirit-Vsts-Build-InlinePowershell.Xpirit-Vsts-Build-InlinePowershell.InlinePowershell@1
+  displayName: 'Inline Powershell'
+  inputs:
+    Script: |
+     
+     Set-Location -Path "$(Build.SourcesDirectory)\Msi\MsiScripts"
+     
+     Remove-Item -Path "$(Build.SourcesDirectory)\Msi\appfiles\*.ll" -Recurse
+     copy "$(Build.SourcesDirectory)\Dependencies\*.dll"  "$(Build.SourcesDirectory)\Msi\appfiles"
+     copy "$(Build.SourcesDirectory)\Dependencies\RegFree\*.*"  "$(Build.SourcesDirectory)\Msi\appfiles"
+     copy "$(Build.SourcesDirectory)\Dependencies\Config\*.*"  "$(Build.SourcesDirectory)\Msi\appfiles"
+     copy "$(Build.SourcesDirectory)\VCRRefndsConsoleApp\bin\release\*.*"  "$(Build.SourcesDirectory)\Msi\appfiles"
+     copy "$(Build.SourcesDirectory)\VCRRefndFTPApp\bin\release\*.*"  "$(Build.SourcesDirectory)\Msi\appfiles"
+     
+     & mm "VCRRefund.mm"
+     
+     if ( -not (Test-Path -Path "$(Build.ArtifactStagingDirectory)\VCRRefund") )
+     {
+         New-Item -Type Directory -Path $(Build.ArtifactStagingDirectory)\VCRRefund
+     }
+     copy "$(Build.SourcesDirectory)\Msi\MsiScripts\out\VCRRefund.mm\MSI\*.*"  $(Build.ArtifactStagingDirectory)\VCRRefund
+     
+- task: BatchScript@1
+  displayName: 'Package MSI'
+  inputs:
+    filename: Msi/CreateMSI.bat
+    arguments: '"$(Build.SourcesDirectory)\Msi\MsiScripts\" VCRRefund'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: MSI Package'
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)\Msi\MsiScripts\out\VCRRefund.mm\MSI\'
+    ArtifactName: Release

@@ -1,0 +1,16 @@
+; ProductName = VCRRefund
+; DESCRIPTION = This set of apps get the refunds from the queue and it ftps the results to the Mainframe for those VCRs to be refunded
+; Installed   = WINDOWS_ALL
+; MsiName     = VCRRefundMsi
+
+VERSION : 3.05.000
+DATE    : 17th Oct 2018
+CHANGES : Update projects to run on server 2012.
+
+VERSION : 3.04.000
+DATE    : 18th Feb 2015
+CHANGES : Remove outdated emails addresses. Create data folder during install if there is noon.
+
+VERSION : 3.03.000
+DATE    : 1st June 2014
+CHANGES : Use authenticated mbrAccessSolar gateway. Update to VS2010.

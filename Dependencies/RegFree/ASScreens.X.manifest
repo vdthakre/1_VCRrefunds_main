@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity type="win32" name="ASScreens.X" version="1.0.0.0" />
+    <file name="ASScreens.dll">
+        <typelib tlbid="{00000000-0011-1111-1111-111111111111}" version="1.0" helpdir="" />
+        <comClass clsid="{00000000-0012-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrError.1" />
+        <comClass clsid="{00000000-0016-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrFareQuote.1" />
+        <comClass clsid="{00000000-0020-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrCardCheck.1" />
+        <comClass clsid="{10DB0E16-DFD4-11D3-8E53-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrETRefundInfo.1" />
+        <comClass clsid="{00000000-0044-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrET.1" />
+        <comClass clsid="{5AA1AEC4-B088-11D2-8DF9-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrETSearch.1" />
+        <comClass clsid="{00000000-0038-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRETList.1" />
+        <comClass clsid="{00000000-003C-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNROSI.1" />
+        <comClass clsid="{00000000-003A-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRSSR.1" />
+        <comClass clsid="{00000000-0030-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRNames.1" />
+        <comClass clsid="{00000000-002E-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRItin.1" />
+        <comClass clsid="{1DC974AB-0E8D-45D8-9E1E-178F8F571CB1}" threadingModel="Both" progid="ASScreens.ASScrPNRUpgradeList.1" />
+        <comClass clsid="{00000000-0032-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRFF.1" />
+        <comClass clsid="{00000000-0034-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRSeats.1" />
+        <comClass clsid="{00000000-0036-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRRemarks.1" />
+        <comClass clsid="{B7DC20B8-C688-11D2-8DFD-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrPNRETAdvisory.1" />
+        <comClass clsid="{79700034-DD5C-11D2-8E05-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrPNRFare.1" />
+        <comClass clsid="{00000000-003E-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNRTkt.1" />
+        <comClass clsid="{79700032-DD5C-11D2-8E05-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrPNRSearch.1" />
+        <comClass clsid="{A4319F09-3C64-11D3-8E2E-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrPNRContacts.1" />
+        <comClass clsid="{A4319F0B-3C64-11D3-8E2E-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrPNRAddress.1" />
+        <comClass clsid="{10DB0E14-DFD4-11D3-8E53-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrPNRDivideInfo.1" />
+        <comClass clsid="{56D78BB4-9877-11D4-8EB9-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrSeatsSold.1" />
+        <comClass clsid="{65642653-4AEE-4178-A203-67BDB95D9FF7}" threadingModel="Both" progid="ASScreens.ASScrPNRFareLadderSegID.1" />
+        <comClass clsid="{1FF62EE0-3992-4A54-8E10-732A81C8490A}" threadingModel="Both" progid="ASScreens.ASScrPNRFareLadderSegIDList.1" />
+        <comClass clsid="{4C2F602A-B38C-40AD-8B3D-243463726FB4}" threadingModel="Both" progid="ASScreens.ASScrPNRPhase4List.1" />
+        <comClass clsid="{409682BA-B0A0-490F-A4C4-42B482335214}" threadingModel="Both" progid="ASScreens.ASScrPNRFFHist.1" />
+        <comClass clsid="{C7CD4C7D-F1D7-4353-9F93-133E40D274A0}" threadingModel="Both" progid="ASScreens.ASScrPNRFFHistUpgradeDetail.1" />
+        <comClass clsid="{825ABA05-9EDA-4F71-B6D6-7D53331415DB}" threadingModel="Both" progid="ASScreens.ASScrPNRFFHistFFNbrDetail.1" />
+        <comClass clsid="{B36AB5CE-0DF9-459C-BA6A-173EC1B24443}" threadingModel="Both" progid="ASScreens.ASScrPNRFFHistRecord.1" />
+        <comClass clsid="{ABFED29A-60AA-4E2D-80D1-317A3F49F2A6}" threadingModel="Both" progid="ASScreens.ASScrPNRHistory.1" />
+        <comClass clsid="{00000000-0024-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPNR.1" />
+        <comClass clsid="{00000000-0014-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrAvail.1" />
+        <comClass clsid="{00000000-0022-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrPaxList.1" />
+        <comClass clsid="{00000000-002A-1111-1111-111111111111}" threadingModel="Both" progid="ASScreens.ASScrFlightList.1" />
+        <comClass clsid="{0B506FC2-B4AA-11D2-9651-00104B7B2F16}" threadingModel="Both" progid="ASScreens.ASScrOnning.1" />
+        <comClass clsid="{97C87704-BAEA-11D2-9652-00104B7B2F16}" threadingModel="Both" progid="ASScreens.ASScrFlightInfo.1" />
+        <comClass clsid="{D21D7772-CDD2-11D2-9656-00104B7B2F16}" threadingModel="Both" progid="ASScreens.ASScrSeatMap.1" />
+        <comClass clsid="{B8FB7984-4399-11D3-8E2E-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrSendMsg.1" />
+        <comClass clsid="{BD255D34-5FC9-11D3-8E2E-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrDistance.1" />
+        <comClass clsid="{FB3E4DA2-DA56-11D3-8E52-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrFlightLoads.1" />
+        <comClass clsid="{C36980D4-FC32-11D2-9851-00104B72C215}" threadingModel="Both" progid="ASScreens.HostPrinter.1" />
+        <comClass clsid="{AAAE6F8A-FDB8-11D2-9853-00104B72C215}" threadingModel="Both" progid="ASScreens.AgentAreaStatus.1" />
+        <comClass clsid="{D3372230-E58F-11D3-8E55-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrNotification.1" />
+        <comClass clsid="{499F9A64-E558-11D3-8E54-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrQueue.1" />
+        <comClass clsid="{8B7D5D82-F60B-11D3-8E57-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrSessionManager.1" />
+        <comClass clsid="{2E008AAD-4B71-11D4-8E74-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrRouting.1" />
+        <comClass clsid="{2E008AAB-4B71-11D4-8E74-00104B6D5767}" threadingModel="Both" progid="ASScreens.ASScrNameList.1" />
+        <comClass clsid="{2A313B64-8C3A-11D5-A755-00B0D07E90CF}" threadingModel="Both" progid="ASScreens.ASScrQueueList.1" />
+        <comClass clsid="{4C57F854-D20F-11D5-A79C-00B0D07E90CF}" threadingModel="Both" progid="ASScreens.ASScrQueueMove.1" />
+        <comClass clsid="{A96186F2-A754-4483-8B3C-3CF87275716B}" threadingModel="Both" progid="ASScreens.ASScrStar.1" />
+        <comClass clsid="{9FDA05C1-C7C8-4B5F-803E-A5A78BEA2C33}" threadingModel="Both" progid="ASScreens.ASScrMPStar.1" />
+        <comClass clsid="{6A396775-B344-43E9-B1D5-15E5CE862A59}" threadingModel="Both" progid="ASScreens.ASScrMPStarList.1" />
+        <comClass clsid="{9E863220-624B-4276-B716-BA8C6B2998E8}" threadingModel="Both" progid="ASScreens.ASScrReissue.1" />
+        <comClass clsid="{246964AA-E457-438A-B6BE-142B9B7EC6D3}" threadingModel="Both" progid="ASScreens.ASScrReissueStart.1" />
+        <comClass clsid="{1C386319-9B58-490B-9232-AE21AAD5F055}" threadingModel="Both" progid="ASScreens.ASScrReissueOptions.1" />
+        <comClass clsid="{6ABC33A1-B299-425B-B681-59E08C063FD6}" threadingModel="Both" progid="ASScreens.ASScrReissueExchangedTkt.1" />
+        <comClass clsid="{42227935-1DF4-40A8-B690-DACF00D193C1}" threadingModel="Both" progid="ASScreens.ASScrReissueApprovalCode.1" />
+        <comClass clsid="{CA4194AA-62FE-46DD-846C-FB978F706805}" threadingModel="Both" progid="ASScreens.ASScrReissueAddCollectFOP.1" />
+        <comClass clsid="{5310D417-9C95-48CB-B6B2-F93A30314374}" threadingModel="Both" progid="ASScreens.ASScrReissueSummary.1" />
+        <comClass clsid="{8FFDA0E5-8094-4CD7-9738-F1173318B1F9}" threadingModel="Both" progid="ASScreens.ASScrReissueAddCollect.1" />
+        <comClass clsid="{2E6FB2BA-4E78-4322-A92C-BD53E1C1DF52}" threadingModel="Both" progid="ASScreens.ASScrReissueTktInstructions.1" />
+        <comClass clsid="{89C4DF04-D064-4964-81CA-5175C3D9A239}" threadingModel="Both" progid="ASScreens.ASScrReissueExchangeData.1" />
+        <comClass clsid="{CFA96162-74B2-4156-9735-49246578BA6F}" threadingModel="Both" progid="ASScreens.ASScrReissueIntlFareCalc.1" />
+        <comClass clsid="{4874EC6C-97CA-4B5D-80A4-2B2EC149CD70}" threadingModel="Both" progid="ASScreens.ASScrReissueIntlAddCollect.1" />
+        <comClass clsid="{BA2E89B5-5F1A-42B2-9422-40AA119C83F5}" threadingModel="Both" progid="ASScreens.ASScrReissueFlightSeg.1" />
+        <comClass clsid="{D8381D05-859C-4500-B176-01F3108A9568}" threadingModel="Both" progid="ASScreens.ASScrReissueInvReroute.1" />
+        <comClass clsid="{5B953A83-CBAB-45BB-898F-44089A94B690}" threadingModel="Both" progid="ASScreens.ASScrReissueAddExchangeData.1" />
+        <comClass clsid="{34D50266-6260-4380-94E4-B35202FF08C0}" threadingModel="Both" progid="ASScreens.ASScrRaw.1" />
+        <comClass clsid="{0A57A37E-FFFC-4924-9B85-6EA755912265}" threadingModel="Both" progid="ASScreens.ASScrUtils.1" />
+        <comClass clsid="{789E800C-FDF7-46C7-8931-B91ABBE82842}" threadingModel="Both" progid="ASScreens.ASScrTaxHelper.1" />
+        <comClass clsid="{AC365621-A464-4542-9086-20536282518E}" threadingModel="Both" progid="ASScreens.ASScrFText.1" />
+        <comClass clsid="{9B8183A1-5C54-421F-9337-B2238563C4A8}" threadingModel="Both" progid="ASScreens.ASScrDate.1" />
+        <comClass clsid="{8D36D842-C3EE-4CEB-9510-D0455CC779A9}" threadingModel="Both" progid="ASScreens.ASScrPNRTravelDocData.1" />
+        <comClass clsid="{5EC173D1-1740-4EFA-B62F-D6245F2C6A39}" threadingModel="Both" progid="ASScreens.ASScrPNRTravelDocAddress.1" />
+        <comClass clsid="{2DFDDAD7-C69B-40F2-AFA6-B50956A89DE5}" threadingModel="Both" progid="ASScreens.ASScrPNRTravelDocOther.1" />
+        <comClass clsid="{5AD72FE9-1000-4CB0-A9C8-158461ACCD70}" threadingModel="Both" progid="ASScreens.ASScrSeatAuthTable.1" />
+        <comClass clsid="{B937BA86-EDED-49DC-A0FF-60D759CACD0A}" threadingModel="Both" progid="ASScreens.ASScrPNRTravelDocV.1" />
+        <comClass clsid="{E44491DC-3788-4A9A-9790-73E0625A3B9B}" threadingModel="Both" progid="ASScreens.ASScrPNRTravelDCVI.1" />
+        <comClass clsid="{6CB20230-840A-45A2-B4F8-03806690CC6E}" threadingModel="Both" progid="ASScreens.ASScrPaxCounts.1" />
+    </file>
+    <comInterfaceExternalProxyStub name="IASScrError" iid="{00000000-0013-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrFareQuote" iid="{00000000-0017-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrCardCheck" iid="{00000000-0021-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrETRefundInfo" iid="{10DB0E15-DFD4-11D3-8E53-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrET" iid="{00000000-0045-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrETSearch" iid="{5AA1AEC3-B088-11D2-8DF9-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRETList" iid="{00000000-0039-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNROSI" iid="{00000000-003D-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRSSR" iid="{00000000-003B-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRNames" iid="{00000000-0031-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRItin" iid="{00000000-002F-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRUpgradeList" iid="{7093BA85-2094-43D2-AC95-9511B942352C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFF" iid="{00000000-0033-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRSeats" iid="{00000000-0035-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRRemarks" iid="{00000000-0037-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRETAdvisory" iid="{B7DC20B7-C688-11D2-8DFD-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFare" iid="{79700033-DD5C-11D2-8E05-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTkt" iid="{00000000-003F-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRSearch" iid="{79700031-DD5C-11D2-8E05-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRContacts" iid="{A4319F08-3C64-11D3-8E2E-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRBags" iid="{A4319F06-3C64-11D3-8E2E-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRAddress" iid="{A4319F0A-3C64-11D3-8E2E-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRDivideInfo" iid="{10DB0E13-DFD4-11D3-8E53-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRDivideInfo2" iid="{10DB0E1B-DFD4-11D3-8E53-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrSeatsSold" iid="{56D78BB3-9877-11D4-8EB9-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRPhase4TaxList" iid="{C4BD6976-E877-4C9A-A6A9-D1C578253EA5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRPhase4Tax" iid="{B5E61373-67B3-4628-A1DE-C8A224C61988}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRPhase4Segment" iid="{BB7E06F2-CE8C-4F69-A365-4BC818CBFBCF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRPhase4SegmentList" iid="{B1F63EA1-0CE3-4E12-B960-0546E581DF09}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRSurcharge" iid="{81C63E0C-487E-4AD6-B9D8-5D3844827C1C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRSurchargeList" iid="{820A7C52-D058-4FCC-B786-CA71CD1EA30D}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTaxesByAirport" iid="{8855605C-3263-4DC7-A40A-BF173BE82824}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTaxesByAirportList" iid="{E4E67644-577E-41DB-87F0-E179F6ED713E}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFareLadderSegID" iid="{639A1253-CCDF-4704-886F-ABB965BEEC84}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFareLadderSegIDList" iid="{CAB02393-B643-4618-8E91-3AE3D35A0D31}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFareLadder" iid="{4316593F-AE18-461A-9AF4-2B3F538042B1}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFareLadderList" iid="{CCC8F8FA-CADC-4F9B-9A9E-B076380DA2B5}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFareCalcLadder" iid="{8FB53679-3C36-4632-B5B7-8A46BEB68D73}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRPhase4" iid="{38006376-FD97-4A84-A50F-5DCC99A933E0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRPhase4List" iid="{26FF741A-766D-4422-B97F-C5CBB52C945A}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFFHistRecord" iid="{1F061B54-FB0B-4E02-8084-EF4CA8ED8E6F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFFHist" iid="{712E2288-B69D-4C95-BBDC-37F90A8DB39F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFFHistUpgradeDetail" iid="{9B7997D5-03B6-42AD-BD83-B47604723F49}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRFFHistFFNbrDetail" iid="{4654C1D5-76AC-4214-89E2-31B4DBD3DFE0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRHistory" iid="{A38CE2D7-2D7F-422B-8E10-C3758CA0AC83}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNR" iid="{00000000-0025-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrAvail" iid="{00000000-0015-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPaxList" iid="{00000000-0023-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrFlightList" iid="{00000000-002B-1111-1111-111111111111}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrOnning" iid="{0B506FC3-B4AA-11D2-9651-00104B7B2F16}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrFlightInfo" iid="{97C87701-BAEA-11D2-9652-00104B7B2F16}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrSeatMap" iid="{D21D7771-CDD2-11D2-9656-00104B7B2F16}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrSendMsg" iid="{B8FB7983-4399-11D3-8E2E-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrDistance" iid="{BD255D33-5FC9-11D3-8E2E-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrFlightLoads" iid="{FB3E4DA1-DA56-11D3-8E52-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IHostPrinter" iid="{C36980D3-FC32-11D2-9851-00104B72C215}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IHostPrinters" iid="{AAAE6F87-FDB8-11D2-9853-00104B72C215}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IAgentArea" iid="{1E178633-FF37-11D2-9855-00104B72C215}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IAgentAreas" iid="{1E178635-FF37-11D2-9855-00104B72C215}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IAgentAreaStatus" iid="{AAAE6F89-FDB8-11D2-9853-00104B72C215}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrNotification" iid="{D337222F-E58F-11D3-8E55-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrQueue" iid="{499F9A63-E558-11D3-8E54-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrSessionManager" iid="{8B7D5D81-F60B-11D3-8E57-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrRouting" iid="{2E008AAC-4B71-11D4-8E74-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrNameList" iid="{2E008AAA-4B71-11D4-8E74-00104B6D5767}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrQueueList" iid="{2A313B63-8C3A-11D5-A755-00B0D07E90CF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrQueueMove" iid="{4C57F853-D20F-11D5-A79C-00B0D07E90CF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrStar" iid="{C61C0F49-5F55-4A3E-9E04-D8DC54033971}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrMPStar" iid="{4E4146D1-F6CA-4176-BD67-D0765E2C1272}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrMPStarList" iid="{994E384C-9969-4948-AF77-330AB6FC59B6}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissue" iid="{56F562F3-ED81-4E30-9E06-C8990F94FE33}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueStart" iid="{A7BE003D-82D7-4D33-806D-6884F67A2FBA}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueOptions" iid="{E71CAFAF-EFE7-4960-BE3C-F8CE423A4051}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueExchangedTkt" iid="{8AEE4382-1C58-4056-8FCE-73F3F27C710A}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueApprovalCode" iid="{844F3722-FE31-418E-A1BD-CE6950884C2C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueAddCollectFOP" iid="{1EEFBD06-1C20-4F44-B5DB-637360A59BB3}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueSummary" iid="{B3735C73-201B-4356-A22C-68D35130A2E9}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueAddCollect" iid="{C19BCF38-195A-4786-9764-6552289F4074}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueTktInstructions" iid="{DC999329-44E2-4C3F-BCAA-720A8BD17440}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueExchangeData" iid="{81F509CF-0181-43BD-9C4B-A1AD215E0272}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueIntlFareCalc" iid="{B54F7349-B7C3-4FD5-8858-983A5EFBEB5C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueIntlAddCollect" iid="{BEF55838-73D4-446D-9FE5-2A42CD62AE45}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueFlightSeg" iid="{E7212BC8-7D8E-45AA-B80C-391358B5F891}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueInvReroute" iid="{0C87F771-B385-4B48-A1B4-3A7FF00B4323}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrReissueAddExchangeData" iid="{E321E9F2-9BD3-4762-8185-6D281F5DD0AC}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrRaw" iid="{450E3075-CDE2-4A4C-963E-CF78BA2F13BE}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrUtils" iid="{8C67F05E-DB47-436B-B35D-41A2260059AF}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrTaxHelper" iid="{96440E49-7B36-47C1-B8D7-592923B5C49F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrFText" iid="{651137AE-317E-4E16-B396-B33F9813FEA0}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrDate" iid="{47A1CF71-6745-4237-A6B1-343AEB120A16}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTravelDocGeneric" iid="{46CA4A47-0C52-4CE7-8728-B192BE570163}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTravelDocData" iid="{E64415EE-6B22-4C72-92F9-C93076B18836}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTravelDocAddress" iid="{0489DC78-6528-4FC5-85F0-DE4F2A1AE301}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTravelDocOther" iid="{3879C137-426D-44D1-8EDC-9C98A4BB42F1}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrSeatAuthTable" iid="{32A6FBF2-96B0-4FB1-B5F6-ECC057A80F11}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTravelDocV" iid="{60DB7E5C-D0FA-47DD-8AE0-917717528E55}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPNRTravelDCVI" iid="{9793B6AA-4AF9-4E1E-8093-919F98F23E40}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+    <comInterfaceExternalProxyStub name="IASScrPaxCounts" iid="{69FB4D84-E00B-4480-A63F-7A6412DB6562}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" baseInterface="{00000000-0000-0000-C000-000000000046}" tlbid="{00000000-0011-1111-1111-111111111111}" />
+</assembly>
